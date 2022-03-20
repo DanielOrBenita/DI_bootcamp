@@ -1,0 +1,102 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    height: 100vh;
+    font-family: heebo, sans-serif;
+    
+}
+
+main {
+    font-family: heebo, sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.4)), url(./assets/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+      
+}
+
+.text {
+    color: white;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    
+}
+.text h1 {
+    font-size: 3rem;
+}
+.text p {
+    font-size: 1.5rem;
+    color:lightgray;
+}
+.btn{
+    margin-top: 50px;
+}
+.btn p {
+    
+font-weight: 500;
+text-decoration: none;
+color: white;
+background: green;
+padding:10px 25px;
+display: inline;
+font-size:1rem;
+border-radius:  30px;
+}
+
+a{ 
+    text-decoration: none;
+    color: white;
+}
+
+.btn p:hover {
+    background-color: black; 
+    }
+
+    .h2hero{
+        text-align: center;
+        background-color: #F2FFFF;
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+section {
+    height: 50%;
+    background-color: #F2FFFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+.box1,.box2,.box3 {
+    position:relative;
+    
+    width: 15%;
+    height: 80%;
+    background-color: white;
+    align-items: center;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       
+}
+
+.box3{
+    margin-right: 0%;      
+}
+
+.box1 img, .box2 img, .box3 img{
+    position: relative;
+    width: 100%;
+    height: 65%;
+}
+
+.box1 h3, .box1 p, .box2 h3, .box2 p, .box3 h3, .box3 p {
+    text-align: center;
+    line-height: 10px;
+}
