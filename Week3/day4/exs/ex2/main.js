@@ -8,3 +8,5 @@ if(newDog=='Chiuaua'){
 } else {
     console.log(`I dont care, I prefer cats`)
 }
+
+3%5
