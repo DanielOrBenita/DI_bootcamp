@@ -4,11 +4,11 @@ let people = ["Greg", "Mary", "Devon", "James"];
 
 //1
 console.log(people)
-people.splice(0,1);
+people.splice(0,1, );
 console.log(people)
 
 //2
-console.log(people.indexOf("James")) // i want to find where James is in the array.
+console.log(people.indexOf("James")) // i want to find where James is in the array. //=2
 people[2]="Jason";
 console.log(people)
 
@@ -24,7 +24,7 @@ let newArray=people.slice(1,3);
 console.log(newArray)
 
 //6
-console.log(newArray.indexOf("foo")) // this code returns -1 because value "Foo" is not exiceted in this array.//
+console.log(newArray.indexOf("foo")) // this code returns -1 (false) because value "Foo" is not exiceted in this array.//
 
 //7
 console.log(newArray.length)
@@ -48,4 +48,3 @@ for (let i= 0;  i< people.length; i++) {
     } 
     console.log(people[i])
 }
-

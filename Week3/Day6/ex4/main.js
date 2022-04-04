@@ -21,7 +21,7 @@ console.log(building.numberOfFloors)
 
 //3
 
-console.log(building.numberOfAptByFloor.firstFloor +building.numberOfAptByFloor.thirdFloor )
+console.log(building.numberOfAptByFloor.firstFloor + building.numberOfAptByFloor.thirdFloor )
 
 //4
 console.log(building.nameOfTenants) // dan is item:2 (which means one in the next console.log)

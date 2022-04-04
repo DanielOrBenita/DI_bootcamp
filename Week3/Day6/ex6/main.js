@@ -1,7 +1,10 @@
-let details = {
-    my: 'name',
-    is: 'Rudolf',
-    the: 'raindeer'
-  }
 
-  console.log(`My ${details.my} is ${details.is} the ${details.the}`);
+let details = {
+  my: 'name',
+  is: 'Rudolf',
+  the: 'raindeer'
+}
+for (let x in details) {
+  console.log(x) 
+  console.log(details[x]) 
+}

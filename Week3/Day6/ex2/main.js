@@ -13,7 +13,7 @@ let color=["blue", "green", "pink", "yellow", "red"]
 
 let suffi=[`st`, `nd`, `th`, `rd`]
 
-for (let i = 0; i < suffi.length; i++) {
+for (let i = 0; i <= suffi.length; i++) {
     console.log(`my ${i+1} ${suffi[i]} choise is ${color[i]}`)       
 }
 
