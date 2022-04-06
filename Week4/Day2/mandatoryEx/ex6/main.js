@@ -11,7 +11,7 @@ function hotelTotal() {
 
     }
 
-    while (isNaN(nightNumber)); { }
+    while (isNaN(nightNumber)); 
 
     let hotelPay = (nightNumber * 140);
     console.log(hotelPay);
