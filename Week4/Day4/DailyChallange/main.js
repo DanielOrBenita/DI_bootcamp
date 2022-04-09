@@ -21,7 +21,7 @@ chooseANumber()
 function loopCountDown () {
 
     for(i=beginNumber; i>0; i--) {
-        console.log(`${i} bottles of beers on the wall, ${i} bottles of beer`)
+        console.log(`${i} bottles of beers on the wall${i} bottles of beer`)
         console.log(`take ${beginNumber + 1 - i} down, pass them around`)
         console.log(`${i-1} bottles of beer`)
         console.log(""); 
