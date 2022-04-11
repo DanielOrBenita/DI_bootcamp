@@ -1,33 +1,19 @@
+// function exercises.
+  // let + function name = (parameters) => { expression}
+
+// step 1: i create a function that give me a number ( it is in string )
+let promptANumber = () => {number = prompt(`please choose a number`);return number} // numbertaker
+
+promptANumber()
 
 
- /* let userNumbers=(prompt(`please pick 2 numbers seperated by comas`))
-
-console.log(userNumbers)
-
-let numbersArray= userNumbers.split(`,`).map(Number)
-
-let sum= numbersArray.reduce(add,0)
-console.log(sum)
-
-function add(a,b){
-return a * b
-} */
-
-let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-//Hint: a string is an array of letters
-let passWord=""
-for(i=0; i<names.length; i++){
-     passWord= names.sort()[i][0]
-    console.log() 
+let reversenumberfunction= () => {
+  reversedNumber= number + "";
+  return reversedNumber.split("")
 }
 
+reversenumberfunction()
 
-// Exercise 7 : Secret Group
+console.log(reversedNumber)
 
-let name4s = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
-names.sort();
-let secretName = "";
-names.forEach((item) => {
-  secretName= item[0];
-});
-console.log(secretName);
+
