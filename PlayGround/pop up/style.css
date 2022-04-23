@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif 
+    }
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.btncontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+button{
+
+    padding:10px 15px;
+    font-size:2em;
+    background-color: rebeccapurple;
+    color:white;
+    border:none;
+    text-align: center;
+    border-radius:8px;
+
+}
+#container{
+position:fixed;
+bottom: 10px;
+right: 10px;
+}
+
+.toast{
+    background-color: rebeccapurple;
+    color:white;
+    padding:2em 5em;
+    margin-bottom:5px;
+    border-radius: 10px;
+}
