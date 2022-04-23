@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Roboto', 'arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/BG.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+/* ^^ same code for all pages ^^  !!  */
+
+/* this is card set-up */
+
+.welcomeCard{ /*Card body*/
+    border-radius: 15px;
+    margin-top: 6em;
+    padding:1em 0em 1em 1.5em;
+  
+    box-shadow: 5px 5px 21px 0px rgba(0,0,0,0.31);   
+
+}
+
+ .card-img-top{ /*Card img*/
+    width: 100px;
+    height: 100px;
+    margin-left:16px;
+    margin-top: 15px;
+    margin-bottom:25px;
+}
+
+/* 
+.btn{
+    border-radius: 20px;
+    padding: 5px 1em;
+    font-weight: 400;
+    margin:30px 0px 0px 0px;
+    font-size:0.8em;
+} */
+
+/* end card set-up */
+
+/* form setup */
+
+.container{
+    border-radius: 5px;
+}
+
+.header{
+    padding: 20px 40px;
+}
+.header h2{
+    margin:0px;
+}
+
+.form{
+    padding: 20px 0px;
+}
+
+.form-control{
+    border: none;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom:5px;
+
+}
+.form-control input{
+border: 2px solid #f0f0f0;
+border-radius: 4px;
+display: block;
+width: 100%;
+padding:10px;
+margin-bottom:10px;
+}
+
+.form-control i {
+    position:absolute;
+    top: 50px;
+    right:25px;
+    visibility: hidden;
+}
+.form-control small{
+visibility: hidden;
+
+}
+
+.form button{
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: none;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color:#f0f0f0;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.right input{
+    border: 2px solid #2ecc71 !important;
+}
+.wrong input{
+    border: 2px solid #e74c3c !important;
+}
+
+.right .fa-check-circle{
+    color: #2ecc71 !important;
+    visibility: visible;
+}
+
+.wrong .fa-exclamation-circle{
+    color: #e74c3c !important;
+    visibility: visible;
+}
+
+.right small{
+    color: #2ecc71 !important;
+
+}
+
+.wrong small{
+    color: #e74c3c !important;
+    visibility: visible;
+}

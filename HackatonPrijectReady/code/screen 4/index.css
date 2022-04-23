@@ -1,0 +1,102 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Roboto', 'arial', sans-serif;
+}
+
+body{
+    background-image: url(../images/BG.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ^^ same code for all pages ^^  !!  */
+
+/* this is card set-up */
+
+.card-row{
+    height: 100vh;
+}
+
+.welcomeCard{ /*Card body*/
+    border-radius: 15px;
+    height: auto;
+    padding:20px 30px;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 21px 0px rgba(0,0,0,0.31);   
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    border-radius: 20px;
+
+    font-weight: 400;
+    
+    font-size:0.8em;
+}
+h4{
+    font-weight: 400 !important;
+    color:rgb(90, 90, 90);
+    margin-bottom:20px !important;
+}
+/* navbarrrrrrrrrr */
+nav{
+    margin-bottom:40px;
+}
+
+li a{
+    margin-right:20px;
+    padding: 0px;
+    color:rgb(59, 59, 59) !important;
+}
+ li a:hover{
+
+    
+    color: dodgerblue !important;
+    
+}
+
+#logout{
+    position:absolute;
+    right:0;
+}
+.circlerow{
+    height:auto;
+}
+.circle{   
+    border-radius:100% ;
+    height:200px;
+    width: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2em;
+}
+.trio{
+    font-size: 5em;
+    color:white;
+}
+
+.audio{
+    padding:10px 25px;
+    font-size:25px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+    border-radius: 30px;;
+    border: none;
+    height:60px;
+}

@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin:0px;
+    font-family: 'Roboto', 'arial', sans-serif;
+}
+
+body{
+    background-image: url(../images/BG.jpg);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+/* ^^ same code for all pages ^^  !!  */
+
+/* this is card set-up */
+
+.welcomeCard{ /*Card body*/
+    border-radius: 15px;
+    margin-top: 6em;
+    padding:1em 0em 1em 1.5em;
+    opacity: 0.92;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 21px 0px rgba(0,0,0,0.31);   
+
+}
+
+ .card-img-top{ /*Card img*/
+    width: 100px;
+    height: 100px;
+    margin-left:16px;
+    margin-bottom: 25px;
+}
+
+
+
+.welcomeCard p{
+    padding:5px 0px;
+    color:rgb(28, 28, 28);
+    font-weight: 300;
+    margin:0 auto;
+    
+}
+
+
+.btn{
+    border-radius: 20px;
+    padding: 5px 1em;
+    font-weight: 400;
+    margin:30px 0px 0px 0px;
+    font-size:0.8em;
+}
+
+/* end card set-up */
