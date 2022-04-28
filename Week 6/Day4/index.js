@@ -27,5 +27,6 @@ let cloneGroceries= ()=>{
 
     // we will no see any effect because we copied only the first obj but thers another obj inside the obj to reference to it we need to do something with JSON
     // which we did not study yet.
+    //actual it was effected. i was cinufsed. i tought to change the deeper {} we need to use json but in fact it is the opposite.
 }
 cloneGroceries()
