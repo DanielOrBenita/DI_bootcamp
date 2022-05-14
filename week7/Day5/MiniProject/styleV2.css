@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cardrow {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body {
+    width: 100%;
+}
+
+img {
+    margin-bottom: 15px;
+    border-bottom: 2px solid black;
+
+}
