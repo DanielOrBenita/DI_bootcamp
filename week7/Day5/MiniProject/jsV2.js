@@ -86,13 +86,14 @@ class CardAndRobots {
         this.username = username
         this.email = email
         this.image = image
+
     }
 
     createCard() {
 
-        let cardContainer = document.createElement(`div`)
-        cardContainer.className = `col-sm-4 cardContainer`
-        cardContainer.id = this.id
+        this.cardContainer = document.createElement(`div`)
+        this.cardContainer.className = `col-sm-4 cardContainer`
+        this.cardContainer.id = this.id
 
         let card = document.createElement(`div`)
         card.className = `card mt-5`
@@ -114,18 +115,20 @@ class CardAndRobots {
         p.textContent = this.email
 
 
-        cardRowContainer.append(cardContainer)
-        cardContainer.append(card)
+        cardRowContainer.append(this.cardContainer)
+        this.cardContainer.append(card)
         card.append(cardBody)
         cardBody.append(img, h5, p)
-
-        return cardContainer
 
 
     }
 
-    check() {
-        console.log(`hello`)
+    show() {
+        this.cardContainer.classList.remove("d-none")
+    }
+
+    hide() {
+        this.cardContainer.classList.add("d-none")
     }
 }
 
@@ -145,7 +148,10 @@ let showRelevantRobot = function (e) {
     console.log(inputFilter)
 
     for (i = 0; i < displayRobots.length; i++) {
-        console.log(displayRobots[i].name.includes(inputFilter)) //? console.log(`contain`) : console.log(`Dont contain`))
+        console.log()
+        displayRobots[i].name.includes(inputFilter)
+            ? displayRobots[i].show()
+            : displayRobots[i].hide()
     }
 
 }
