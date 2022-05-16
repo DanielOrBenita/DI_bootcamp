@@ -11,6 +11,31 @@
 </head>
 
 <body>
+
+    <form onsubmit="return validate(this)">
+        <!--First: Enter in the input field-->
+        <input type="text" value="text" name="txt"><br>
+        <!--Second: Click "submit":-->
+        <input type="submit" value="Submit">
+    </form>
+
+    <form onsubmit="return false">
+        <input type="text" size="30" value="Focus here and press enter">
+        <input type="submit" value="Submit" onclick="alert('click')">
+    </form>
+
+    <script>
+        function validate(frm) {
+            console.log(frm);
+            let val = frm.txt.value;
+            alert(val)
+            if (val === 'ziv')
+                return false;
+            else
+                return true;
+        }
+    </script>
+
     <script src="main.js"></script>
 </body>
 
