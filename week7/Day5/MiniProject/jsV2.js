@@ -77,11 +77,12 @@ const robots = [
 
 
 let robot =
-{id: 10,
-name: 'Clementina DuBuque',
-username: 'Moriah.Stanton',
-email: 'Rey.Padberg@karina.biz',
-image: 'https://robohash.org/10?50X50'
+{
+    id: 10,
+    name: 'Clementina DuBuque',
+    username: 'Moriah.Stanton',
+    email: 'Rey.Padberg@karina.biz',
+    image: 'https://robohash.org/10?50X50'
 }
 
 const cardRowContainer = document.getElementById(`cardRowContainer`)
@@ -166,3 +167,5 @@ let showRelevantRobot = function (e) {
 }
 
 input.addEventListener("input", showRelevantRobot)
+
+// update i finished
