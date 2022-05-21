@@ -102,6 +102,7 @@ class CreateRobots {
         // </div>
         this.card = document.createElement(`div`)
         card.classList.add(`card`)
+        //this is ot defined, cause there it a variable but its a param of the constructor
         card.classList.add(`col-3`)
         let image = document.createElement(`img`)
         image.classList.add(`card-img-top`)
