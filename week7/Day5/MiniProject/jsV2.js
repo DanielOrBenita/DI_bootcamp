@@ -155,10 +155,15 @@ console.log(displayRobots)
 
 let showRelevantRobot = function (e) {
     let inputFilter = e.target.value.toLowerCase()
+    //if you lowercase the input, you need to lowercase the name of the robot too.
     console.log(inputFilter)
 
     for (i = 0; i < displayRobots.length; i++) {
-        console.log()
+        console.log(displayRobots[i].name.includes(inputFilter))
+        console.log(displayRobots[i].name)
+        console.log(inputFilter)
+
+
         displayRobots[i].name.includes(inputFilter)
             ? displayRobots[i].show()
             : displayRobots[i].hide()
