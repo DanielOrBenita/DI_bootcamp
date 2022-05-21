@@ -1,0 +1,14 @@
+.container {
+    padding: 0px !important;
+}
+
+.navbar {
+    margin-bottom: 35px;
+}
+
+.navbar-brand {
+    font-size: 2em !important;
+    font-family: 'Oswald', sans-serif;
+
+
+}

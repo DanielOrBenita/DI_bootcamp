@@ -50,11 +50,24 @@ console.log(true != true) // false
 
 //3
 
-let userSentence = prompt(`insert a sentence containing the word Nemo`) // i want to find the position of nemo word in the sentence
-let position = userSentence.split(" ")
-let nemoPos = position.indexOf(`Nemo`)
-if (nemoPos >= 0) {
-    alert(` i font nemo on word number ${nemoPos + 1}`)
-} else {
-    alert(`could not find nemo`)
+// let userSentence = prompt(`insert a sentence containing the word Nemo`) // i want to find the position of nemo word in the sentence
+// let position = userSentence.split(" ")
+// let nemoPos = position.indexOf(`Nemo`)
+// if (nemoPos >= 0) {
+//     alert(` i font nemo on word number ${nemoPos + 1}`)
+// } else {
+//     alert(`could not find nemo`)
+// }
+
+//4
+
+let userNumber = Number(prompt(`please insert a number`))
+if (userNumber < 2) {
+    console.log(`boom`)
+} else if (userNumber % 5 == 0 && userNumber % 2 == 0) {
+    console.log(`BOOM!`)
+} else if (userNumber % 2 == 0) {
+    console.log(`b${`o`.repeat(userNumber)}m!`)
+} else if (userNumber > 2) {
+    console.log(`b${`o`.repeat(userNumber)}m`)
 }

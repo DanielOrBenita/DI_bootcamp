@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap myVersion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="container mb-3 mt-2">
+            <nav class="navbar navbar-light p-2">
+                <div class="container-fluid justify-content-around">
+                    <a class="navbar-brand fw-bold fs-3 text-white">Weather App</a>
+                    <form class="d-flex col-lg-8" name="searchForm">
+                        <input id="searchInput" name="searchInput" class="form-control form-control-lg me-4"
+                            type="search" placeholder="Search a place" />
+                        <button id="searchBtn" name="searchBtn" class="btn btn-primary col-5 col-lg-2 text-white"
+                            type="submit">
+                            search
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="row1 row justify-content-center mt-5">
+
+                </div>
+
+                <div class="row text-white">
+                    <div class="col2 d-flex justify-content-center mt-4">
+                        <p class="me-2 fw-bold">change to Kelvin ?</p>
+                        <input type="checkbox" id="switch" />
+                        <label for="switch">Toggle</label>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
