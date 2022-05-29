@@ -40,51 +40,49 @@ const body = document.querySelector(`body`)
 
 
 
+// first i want to collect the information from the api.
+//this function return a promise which means i cannot use it in global scope BUT i can use it as a parameter.
+// now i now that function return a promise , so i can use promise.all to execute the promises
 
-const getInfo = () => {
+const getData = async (lat, lon) => {
+  lat = latitude1.value
+  lon = longitude1.value
+  let information = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`)
+  let loadedInformation = await information.json()
+  return loadedInformation.results
+}
+// now i want to do the same to collect the require data for the second city
+// now i now that function return a promise , so i can use promise.all to execute the promises
 
-  const sunTime1 = async () => {
+const getData2 = async (lat, lon) => {
+  lat = latitude2.value
+  lon = longitude2.value
+  let information = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`)
+  let loadedInformation = await information.json()
+  return loadedInformation.results
+}
 
-    let lat = latitude1.value
-    let lon = longitude1.value
-
-
-    if (!(lat == "")) {
-      const res = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`);
-      let data = await res.json()
-      return console.log(data.results.sunrise)
-    }
-
-  }
-
-
-
-  const sunTime2 = async () => {
-
-    let lat = latitude2.value
-    let lon = longitude2.value
-
-
-    if (!(lat == "")) {
-      const res = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`);
-      let data = await res.json()
-      return console.log(data.results.sunrise)
-    }
-
-
-
-
-  }
-
-  sunTime1()
-  sunTime2()
-
+// then i want to put the information in dom.
+// this function wait for an object. in this object i want only the sunrise key.
+const putInDom = ({ sunrise }) => {
+  let div = document.createElement(`div`)
+  div.innerHTML = `The sunrise will be at ${sunrise}`
+  body.append(div)
 }
 
 
-getInfo()
+// now i want to declare the sunrise which is the key of the return of the getData and display the information on DOM
 
 
-button.addEventListener(`click`, getInfo)
+const displayInDom = async () => {
 
+  // i put the promsies i created into ARR in order to use promise.all
+  let datasArr = await Promise.all([getData(), getData2()])
+  datasArr.forEach(putInDom)
+
+}
+
+button.addEventListener("click", displayInDom);
+
+console.log(`I am a ninja`);
 

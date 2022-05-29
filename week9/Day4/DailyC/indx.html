@@ -26,3 +26,52 @@
 </body>
 
 </html>
+<!-- 
+const getInfo = () => {
+
+    const sunTime1 = async () => {
+  
+      let lat = latitude1.value
+      let lon = longitude1.value
+  
+  
+      if (!(lat == "")) {
+        const res = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`);
+        let data = await res.json()
+        return console.log(data)
+      }
+  
+  
+  
+    }
+  
+  
+  
+    const sunTime2 = async () => {
+  
+      let lat = latitude2.value
+      let lon = longitude2.value
+  
+  
+      if (!(lat == "")) {
+        const res = await fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}`);
+        let data = await res.json()
+        return console.log(data.results.sunrise)
+      }
+  
+  
+  
+  
+    }
+  
+    sunTime1()
+    sunTime2()
+  
+  }
+  
+  
+  getInfo()
+  
+  
+  button.addEventListener(`click`, getInfo)
+   -->
