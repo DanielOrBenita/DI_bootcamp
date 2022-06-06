@@ -21,3 +21,5 @@ INSERT INTO public.actors VALUES
 select count(actors) from public.actors
 
 -- i can not add null because it set up as not null
+
+--Daniel
