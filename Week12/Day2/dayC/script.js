@@ -32,11 +32,11 @@
 
 // part 3
 
-const dateAnswer = require('./main')
+// const dateAnswer = require('./main')
 
-const http = require('http')
+// const http = require('http')
 
-const server = http.createServer((req,res)=>{
-    res.end(`<p>The current date is: ${dateAnswer.currentDate()}</p>`);})
+// const server = http.createServer((req,res)=>{
+//     res.end(`<p>The current date is: ${dateAnswer.currentDate()}</p>`);})
 
-server.listen(8080)
+// server.listen(8080)
